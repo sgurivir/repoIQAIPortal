@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>repoIQ - AI-Powered Code Quality Analysis</title>
+    <meta name="description" content="Analyze your code with AI to find performance and quality issues. Improve your codebase with repoIQ's intelligent analysis.">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav-brand">
+                <div class="logo">repoIQ™</div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#pricing-section" class="nav-link">Pricing</a></li>
+                <li><a href="pages/about.html" class="nav-link">About</a></li>
+                <li><a href="pages/contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn btn-outline">Sign In</a>
+                <a href="#" class="btn btn-primary">Get Started</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="hero">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: start; min-height: 70vh; padding: 4rem 0 2rem 0;">
+                <!-- Left Column: Hero Content -->
+                <div>
+                    <h1 class="hero-title">AI-Powered Code Quality Analysis</h1>
+                    <p class="hero-subtitle">
+                        Discover performance bottlenecks, security vulnerabilities, and code quality issues
+                        in your repositories with advanced AI analysis.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#" class="btn btn-primary btn-large">Start Analysis</a>
+                        <a href="pages/demo.html" class="btn btn-outline btn-large">View Demo</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">1M+</span>
+                            <span class="stat-label">Lines Analyzed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1000+</span>
+                            <span class="stat-label">Issues Found</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Repositories</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Column: Dashboard Preview -->
+                <div class="hero-visual">
+                    <div class="dashboard-preview" style="transform: scale(1); height: 100%; min-height: 500px;">
+                        <div class="dashboard-header">
+                            <h3 style="margin: 0; font-size: 1rem; color: #1d1d1f; padding: 0.75rem 1rem; border-bottom: 1px solid #e5e7eb;">
+                                Code Analysis Report
+                            </h3>
+                        </div>
+                        <div class="dashboard-content" style="padding: 1.5rem; height: 100%;">
+                            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; margin-bottom: 1.5rem;">
+                                <div style="background: #ffffff; padding: 1rem; border-radius: 8px; text-align: center; border: 1px solid #e5e7eb;">
+                                    <div style="font-size: 1.5rem; font-weight: 700; color: #dc2626; margin-bottom: 0.5rem;">5</div>
+                                    <div style="font-size: 0.8rem; color: #6b7280; text-transform: uppercase;">Critical</div>
+                                </div>
+                                <div style="background: #ffffff; padding: 1rem; border-radius: 8px; text-align: center; border: 1px solid #e5e7eb;">
+                                    <div style="font-size: 1.5rem; font-weight: 700; color: #f59e0b; margin-bottom: 0.5rem;">23</div>
+                                    <div style="font-size: 0.8rem; color: #6b7280; text-transform: uppercase;">High</div>
+                                </div>
+                                <div style="background: #ffffff; padding: 1rem; border-radius: 8px; text-align: center; border: 1px solid #e5e7eb;">
+                                    <div style="font-size: 1.5rem; font-weight: 700; color: #f59e0b; margin-bottom: 0.5rem;">87</div>
+                                    <div style="font-size: 0.8rem; color: #6b7280; text-transform: uppercase;">Medium</div>
+                                </div>
+                                <div style="background: #ffffff; padding: 1rem; border-radius: 8px; text-align: center; border: 1px solid #e5e7eb;">
+                                    <div style="font-size: 1.5rem; font-weight: 700; color: #059669; margin-bottom: 0.5rem;">12</div>
+                                    <div style="font-size: 0.8rem; color: #6b7280; text-transform: uppercase;">Low</div>
+                                </div>
+                            </div>
+                            
+                            <div style="background: #ffffff; border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden; height: 280px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; border-bottom: 1px solid #e5e7eb;">
+                                    <div>
+                                        <h2 style="margin: 0; font-size: 1rem; font-weight: 600; color: #1d1d1f;">mean.dispatch.cpp:296</h2>
+                                        <p style="margin: 0; font-size: 0.8rem; color: #6b7280;">cv::meanStdDev()</p>
+                                    </div>
+                                    <span style="background: #fef3c7; color: #92400e; padding: 0.25rem 0.75rem; border-radius: 999px; font-size: 0.75rem; font-weight: 600;">MEDIUM</span>
+                                </div>
+                                <div style="padding: 1rem; height: calc(100% - 60px); overflow-y: auto;">
+                                    <div style="margin-bottom: 1rem;">
+                                        <h3 style="margin: 0 0 0.5rem 0; font-size: 0.85rem; font-weight: 600; color: #374151;">Issue</h3>
+                                        <p style="margin: 0; color: #1d1d1f; line-height: 1.4; font-size: 0.8rem;">AutoBuffer allocation with fixed size cn*4 could be optimized by moving outside the function for frequently called operations</p>
+                                    </div>
+                                    <div style="margin-bottom: 1rem;">
+                                        <h3 style="margin: 0 0 0.5rem 0; font-size: 0.85rem; font-weight: 600; color: #374151;">Description</h3>
+                                        <p style="margin: 0; color: #6b7280; line-height: 1.4; font-size: 0.8rem;">Repeated memory allocation/deallocation overhead in a core computer vision function that may be called frequently</p>
+                                    </div>
+                                    <div>
+                                        <h3 style="margin: 0 0 0.5rem 0; font-size: 0.85rem; font-weight: 600; color: #374151;">Potential Solution</h3>
+                                        <p style="margin: 0; color: #059669; line-height: 1.4; font-size: 0.8rem;">Consider using a thread-local static buffer or moving allocation outside hot paths if this function is called repeatedly</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compact Features & Pricing Section -->
+    <section id="pricing-section" style="padding: 30px 0 20px 0; background-color: #f9fafb;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 4rem; align-items: start;">
+                <!-- Features Grid -->
+                <div id="features">
+                    <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: #1f2937; text-align: center;">Key Features</h2>
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+                        <div style="background: white; padding: 1.5rem; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔍</div>
+                            <h3 style="font-size: 1rem; margin-bottom: 0.5rem; color: #1f2937;">Quality Analysis</h3>
+                            <p style="font-size: 0.85rem; color: #6b7280; margin: 0; line-height: 1.4;">Detect code smells and technical debt</p>
+                        </div>
+                        <div style="background: white; padding: 1.5rem; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">⚡</div>
+                            <h3 style="font-size: 1rem; margin-bottom: 0.5rem; color: #1f2937;">Performance Insights</h3>
+                            <p style="font-size: 0.85rem; color: #6b7280; margin: 0; line-height: 1.4;">Find bottlenecks and optimization opportunities</p>
+                        </div>
+                        <div style="background: white; padding: 1.5rem; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🛡️</div>
+                            <h3 style="font-size: 1rem; margin-bottom: 0.5rem; color: #1f2937;">Security Scanning</h3>
+                            <p style="font-size: 0.85rem; color: #6b7280; margin: 0; line-height: 1.4;">Identify vulnerabilities and threats</p>
+                        </div>
+                        <div style="background: white; padding: 1.5rem; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">📊</div>
+                            <h3 style="font-size: 1rem; margin-bottom: 0.5rem; color: #1f2937;">Detailed Reports</h3>
+                            <p style="font-size: 0.85rem; color: #6b7280; margin: 0; line-height: 1.4;">Comprehensive insights and recommendations</p>
+                        </div>
+                        <div style="background: white; padding: 1.5rem; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔗</div>
+                            <h3 style="font-size: 1rem; margin-bottom: 0.5rem; color: #1f2937;">GitHub Integration</h3>
+                            <p style="font-size: 0.85rem; color: #6b7280; margin: 0; line-height: 1.4;">One-click repository connection</p>
+                        </div>
+                        <div style="background: white; padding: 1.5rem; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🎯</div>
+                            <h3 style="font-size: 1rem; margin-bottom: 0.5rem; color: #1f2937;">Smart Prioritization</h3>
+                            <p style="font-size: 0.85rem; color: #6b7280; margin: 0; line-height: 1.4;">AI-powered issue ranking</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pricing Card -->
+                <div>
+                    <div style="background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border: 2px solid #4f46e5;">
+                        <div style="text-align: center; margin-bottom: 1.5rem;">
+                            <h2 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: #1f2937;">Get Custom Pricing</h2>
+                            <p style="color: #6b7280; font-size: 0.9rem; margin: 0;">Tailored to your needs</p>
+                        </div>
+                        
+                        <div style="margin-bottom: 1.5rem;">
+                            <div style="display: flex; align-items: center; margin-bottom: 0.75rem; font-size: 0.85rem;">
+                                <span style="color: #059669; margin-right: 0.5rem;">✓</span>
+                                <span>Custom team size pricing</span>
+                            </div>
+                            <div style="display: flex; align-items: center; margin-bottom: 0.75rem; font-size: 0.85rem;">
+                                <span style="color: #059669; margin-right: 0.5rem;">✓</span>
+                                <span>Cloud or on-premise deployment</span>
+                            </div>
+                            <div style="display: flex; align-items: center; margin-bottom: 0.75rem; font-size: 0.85rem;">
+                                <span style="color: #059669; margin-right: 0.5rem;">✓</span>
+                                <span>Dedicated support</span>
+                            </div>
+                            <div style="display: flex; align-items: center; margin-bottom: 0.75rem; font-size: 0.85rem;">
+                                <span style="color: #059669; margin-right: 0.5rem;">✓</span>
+                                <span>Volume discounts available</span>
+                            </div>
+                        </div>
+                        
+                        <form id="customPricingForm" style="margin-bottom: 1rem;">
+                            <input type="email" id="userEmail" name="email" placeholder="Your email address" required style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 6px; margin-bottom: 1rem; font-size: 14px;">
+                            <input type="text" id="companyName" name="company" placeholder="Company name" required style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 6px; margin-bottom: 1rem; font-size: 14px;">
+                            <select id="teamSize" name="teamSize" required style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 6px; margin-bottom: 1rem; font-size: 14px;">
+                                <option value="">Select team size</option>
+                                <option value="1-10 developers">1-10 developers</option>
+                                <option value="11-50 developers">11-50 developers</option>
+                                <option value="51-200 developers">51-200 developers</option>
+                                <option value="200+ developers">200+ developers</option>
+                            </select>
+                        </form>
+                        
+                        <button id="getCustomQuoteBtn" class="btn btn-primary" style="width: 100%; text-align: center; display: block; border: none; cursor: pointer;">Get Custom Quote</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" style="padding: 20px 0; background-color: #f9fafb;">
+        <div class="container">
+            <div class="footer-bottom" style="padding: 0; border-top: 1px solid #e5e7eb; padding-top: 20px;">
+                <p class="footer-copyright">
+                    © 2025 repoIQ™. All rights reserved.
+                </p>
+                <div class="footer-links" style="display: flex; gap: 2rem; align-items: center;">
+                    <a href="#" style="color: #6b7280; text-decoration: none; font-size: 0.9rem;">About</a>
+                    <a href="#" style="color: #6b7280; text-decoration: none; font-size: 0.9rem;">Corporate Information</a>
+                    <a href="#" style="color: #6b7280; text-decoration: none; font-size: 0.9rem;">Privacy Policy</a>
+                    <a href="#" style="color: #6b7280; text-decoration: none; font-size: 0.9rem;">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

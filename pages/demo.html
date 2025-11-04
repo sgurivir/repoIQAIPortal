@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo - repoIQ Dashboard</title>
+    <meta name="description" content="Experience repoIQ's AI-powered code analysis dashboard with our interactive demo.">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav-brand">
+                <a href="../index.html" class="logo">repoIQ™</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html#features" class="nav-link">Features</a></li>
+                <li><a href="../index.html#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="mailto:support@repoiq.net?subject=RepoIQ%20support" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn btn-outline">Sign In</a>
+                <a href="#" class="btn btn-primary">Get Started</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Demo Dashboard -->
+    <section style="padding: 40px 0; background-color: #f9fafb; min-height: calc(100vh - 80px);">
+        <div class="container">
+            <!-- Dashboard Header -->
+            <div style="background: white; border-radius: 12px; padding: 2rem; margin-bottom: 2rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                    <div>
+                        <h1 style="font-size: 2rem; margin-bottom: 0.5rem; color: #1f2937;">Project Dashboard</h1>
+                        <p style="color: #6b7280; margin: 0;">sample-react-app</p>
+                    </div>
+                    <div style="display: flex; gap: 1rem;">
+                        <button class="btn btn-outline">Export Report</button>
+                        <button class="btn btn-primary">Run Analysis</button>
+                    </div>
+                </div>
+                
+                <!-- Project Stats -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+                    <div style="text-align: center; padding: 1rem; background: #f9fafb; border-radius: 8px;">
+                        <div style="font-size: 2rem; font-weight: 700; color: #dc2626; margin-bottom: 0.5rem;">5</div>
+                        <div style="color: #6b7280; font-size: 0.875rem;">Critical Issues</div>
+                    </div>
+                    <div style="text-align: center; padding: 1rem; background: #f9fafb; border-radius: 8px;">
+                        <div style="font-size: 2rem; font-weight: 700; color: #f59e0b; margin-bottom: 0.5rem;">87</div>
+                        <div style="color: #6b7280; font-size: 0.875rem;">Medium Issues</div>
+                    </div>
+                    <div style="text-align: center; padding: 1rem; background: #f9fafb; border-radius: 8px;">
+                        <div style="font-size: 2rem; font-weight: 700; color: #059669; margin-bottom: 0.5rem;">A</div>
+                        <div style="color: #6b7280; font-size: 0.875rem;">Quality Grade</div>
+                    </div>
+                    <div style="text-align: center; padding: 1rem; background: #f9fafb; border-radius: 8px;">
+                        <div style="font-size: 2rem; font-weight: 700; color: #4f46e5; margin-bottom: 0.5rem;">8.2K</div>
+                        <div style="color: #6b7280; font-size: 0.875rem;">Lines of Code</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Dashboard Content -->
+            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem;">
+                <!-- Left Column -->
+                <div>
+                    <!-- Issues List -->
+                    <div class="card" style="margin-bottom: 2rem;">
+                        <div class="card-header">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <h2 style="margin: 0; font-size: 1.25rem;">Recent Issues</h2>
+                                <div class="tabs" style="border: none; margin: 0;">
+                                    <ul class="tab-list" style="margin: 0;">
+                                        <li class="tab-item"><a href="#all-issues" class="tab-link active">All</a></li>
+                                        <li class="tab-item"><a href="#critical-issues" class="tab-link">Critical</a></li>
+                                        <li class="tab-item"><a href="#security-issues" class="tab-link">Security</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body" style="padding: 0;">
+                            <div id="all-issues" class="tab-content active">
+                                <div style="display: grid; gap: 1px; background: #e5e7eb;">
+                                    <div style="background: white; padding: 1rem; display: flex; justify-content: space-between; align-items: center;">
+                                        <div>
+                                            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                                                <span style="background: #fee2e2; color: #991b1b; padding: 2px 6px; border-radius: 12px; font-size: 0.7rem; font-weight: 600;">CRITICAL</span>
+                                                <span style="font-weight: 500;">Memory Leak Risk</span>
+                                            </div>
+                                            <p style="color: #6b7280; margin: 0; font-size: 0.875rem;">src/utils/cache.js:28</p>
+                                        </div>
+                                        <button class="btn btn-outline" style="padding: 6px 12px; font-size: 0.875rem;">View</button>
+                                    </div>
+                                    
+                                    <div style="background: white; padding: 1rem; display: flex; justify-content: space-between; align-items: center;">
+                                        <div>
+                                            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                                                <span style="background: #fef3c7; color: #92400e; padding: 2px 6px; border-radius: 12px; font-size: 0.7rem; font-weight: 600;">HIGH</span>
+                                                <span style="font-weight: 500;">Potential SQL Injection</span>
+                                            </div>
+                                            <p style="color: #6b7280; margin: 0; font-size: 0.875rem;">src/api/users.js:42</p>
+                                        </div>
+                                        <button class="btn btn-outline" style="padding: 6px 12px; font-size: 0.875rem;">View</button>
+                                    </div>
+                                    
+                                    <div style="background: white; padding: 1rem; display: flex; justify-content: space-between; align-items: center;">
+                                        <div>
+                                            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                                                <span style="background: #fef3c7; color: #92400e; padding: 2px 6px; border-radius: 12px; font-size: 0.7rem; font-weight: 600;">MEDIUM</span>
+                                                <span style="font-weight: 500;">Unused Variable</span>
+                                            </div>
+                                            <p style="color: #6b7280; margin: 0; font-size: 0.875rem;">src/components/Header.jsx:15</p>
+                                        </div>
+                                        <button class="btn btn-outline" style="padding: 6px 12px; font-size: 0.875rem;">View</button>
+                                    </div>
+                                    
+                                    <div style="background: white; padding: 1rem; display: flex; justify-content: space-between; align-items: center;">
+                                        <div>
+                                            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                                                <span style="background: #fef3c7; color: #92400e; padding: 2px 6px; border-radius: 12px; font-size: 0.7rem; font-weight: 600;">MEDIUM</span>
+                                                <span style="font-weight: 500;">Complex Function</span>
+                                            </div>
+                                            <p style="color: #6b7280; margin: 0; font-size: 0.875rem;">src/services/analytics.js:156</p>
+                                        </div>
+                                        <button class="btn btn-outline" style="padding: 6px 12px; font-size: 0.875rem;">View</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Code Quality Trends -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 style="margin: 0; font-size: 1.25rem;">Quality Trends</h2>
+                        </div>
+                        <div class="card-body">
+                            <div style="background: #f9fafb; padding: 2rem; border-radius: 8px; text-align: center;">
+                                <div style="color: #6b7280; margin-bottom: 1rem;">📈</div>
+                                <p style="color: #6b7280; margin: 0;">Quality trend chart would be displayed here</p>
+                                <p style="color: #6b7280; margin: 0; font-size: 0.875rem;">Showing improvement over the last 30 days</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div>
+                    <!-- Quick Actions -->
+                    <div class="card" style="margin-bottom: 2rem;">
+                        <div class="card-header">
+                            <h2 style="margin: 0; font-size: 1.25rem;">Quick Actions</h2>
+                        </div>
+                        <div class="card-body">
+                            <div style="display: grid; gap: 1rem;">
+                                <button class="btn btn-primary btn-full">Run Full Analysis</button>
+                                <button class="btn btn-outline btn-full">Security Scan</button>
+                                <button class="btn btn-outline btn-full">Performance Check</button>
+                                <button class="btn btn-outline btn-full">Generate Report</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- File Analysis -->
+                    <div class="card" style="margin-bottom: 2rem;">
+                        <div class="card-header">
+                            <h2 style="margin: 0; font-size: 1.25rem;">Most Problematic Files</h2>
+                        </div>
+                        <div class="card-body" style="padding: 0;">
+                            <div style="display: grid; gap: 1px; background: #e5e7eb;">
+                                <div style="background: white; padding: 1rem;">
+                                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                        <span style="font-weight: 500; font-size: 0.875rem;">api/users.js</span>
+                                        <span class="badge badge-error">8</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar error" style="width: 80%;"></div>
+                                    </div>
+                                </div>
+                                
+                                <div style="background: white; padding: 1rem;">
+                                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                        <span style="font-weight: 500; font-size: 0.875rem;">utils/helpers.js</span>
+                                        <span class="badge badge-warning">5</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar warning" style="width: 50%;"></div>
+                                    </div>
+                                </div>
+                                
+                                <div style="background: white; padding: 1rem;">
+                                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                                        <span style="font-weight: 500; font-size: 0.875rem;">components/App.jsx</span>
+                                        <span class="badge badge-warning">3</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar warning" style="width: 30%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Activity -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 style="margin: 0; font-size: 1.25rem;">Recent Activity</h2>
+                        </div>
+                        <div class="card-body">
+                            <div style="display: grid; gap: 1rem;">
+                                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                    <div style="width: 8px; height: 8px; background: #059669; border-radius: 50%;"></div>
+                                    <div>
+                                        <p style="margin: 0; font-size: 0.875rem; font-weight: 500;">Analysis completed</p>
+                                        <p style="margin: 0; font-size: 0.75rem; color: #6b7280;">2 minutes ago</p>
+                                    </div>
+                                </div>
+                                
+                                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                    <div style="width: 8px; height: 8px; background: #f59e0b; border-radius: 50%;"></div>
+                                    <div>
+                                        <p style="margin: 0; font-size: 0.875rem; font-weight: 500;">New issues found</p>
+                                        <p style="margin: 0; font-size: 0.75rem; color: #6b7280;">1 hour ago</p>
+                                    </div>
+                                </div>
+                                
+                                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                                    <div style="width: 8px; height: 8px; background: #4f46e5; border-radius: 50%;"></div>
+                                    <div>
+                                        <p style="margin: 0; font-size: 0.875rem; font-weight: 500;">Report generated</p>
+                                        <p style="margin: 0; font-size: 0.75rem; color: #6b7280;">3 hours ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Notice -->
+    <div style="position: fixed; bottom: 20px; right: 20px; background: #4f46e5; color: white; padding: 1rem; border-radius: 8px; box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1); max-width: 300px;">
+        <p style="margin: 0; font-size: 0.875rem; font-weight: 500;">🎯 Demo Mode</p>
+        <p style="margin: 0.5rem 0 0 0; font-size: 0.75rem; opacity: 0.9;">This is a demo dashboard. Sign up to analyze your own repositories!</p>
+    </div>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+        // Demo-specific functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Simulate real-time updates
+            setInterval(function() {
+                const activities = [
+                    'New commit analyzed',
+                    'Security scan completed',
+                    'Performance check finished',
+                    'Issue resolved',
+                    'Quality improved'
+                ];
+                
+                // This would update the recent activity in a real application
+                console.log('Demo: ' + activities[Math.floor(Math.random() * activities.length)]);
+            }, 10000);
+        });
+    </script>
+</body>
+</html>

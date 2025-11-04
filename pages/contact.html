@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - repoIQ</title>
+    <meta name="description" content="Get in touch with the repoIQ team. We're here to help with your code quality analysis needs.">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav-brand">
+                <a href="../index.html" class="logo">repoIQ™</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html#features" class="nav-link">Features</a></li>
+                <li><a href="../index.html#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="mailto:support@repoiq.net?subject=RepoIQ%20support" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn btn-outline">Sign In</a>
+                <a href="#" class="btn btn-primary">Get Started</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="hero" style="padding: 20px 0; background: linear-gradient(135deg, #059669 0%, #047857 100%); min-height: auto;">
+        <div class="container">
+            <div class="hero-content" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <h1 class="hero-title" style="font-size: 2rem; margin-bottom: 0.5rem;">Get in Touch</h1>
+                <p class="hero-subtitle" style="font-size: 1rem; margin: 0;">
+                    Have questions about repoIQ? We'd love to hear from you.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section style="padding: 30px 0;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+                <!-- Contact Form -->
+                <div>
+                    <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: #1f2937;">Send us a Message</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company" class="form-label">Company</label>
+                            <input type="text" id="company" name="company" class="form-input">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject *</label>
+                            <select id="subject" name="subject" class="form-input" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="sales">Sales Question</option>
+                                <option value="support">Technical Support</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea id="message" name="message" class="form-textarea" placeholder="Tell us how we can help you..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large btn-full">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div>
+                    <h2 style="font-size: 2rem; margin-bottom: 1.5rem; color: #1f2937;">Contact Information</h2>
+                    
+                    <div style="display: grid; gap: 2rem;">
+                        <div class="card">
+                            <div class="card-body">
+                                <div style="display: flex; align-items: center; gap: 1rem;">
+                                    <div style="width: 48px; height: 48px; background: #4f46e5; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.25rem;">📧</div>
+                                    <div>
+                                        <h3 style="margin-bottom: 0.5rem; font-size: 1.125rem;">Email</h3>
+                                        <p style="color: #6b7280; margin: 0;"><a href="mailto:support@repoiq.net?subject=RepoIQ%20support" style="color: #4f46e5; text-decoration: none;">support@repoiq.net</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <div style="display: flex; align-items: center; gap: 1rem;">
+                                    <div style="width: 48px; height: 48px; background: #7c3aed; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.25rem;">📍</div>
+                                    <div>
+                                        <h3 style="margin-bottom: 0.5rem; font-size: 1.125rem;">Office</h3>
+                                        <p style="color: #6b7280; margin: 0;">San Jose, CA</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Section -->
+                    <div style="margin-top: 2rem;">
+                        <h3 style="font-size: 1.25rem; margin-bottom: 1rem; color: #1f2937;">FAQ</h3>
+                        
+                        <div style="display: grid; gap: 0.75rem;">
+                            <details style="border: 1px solid #e5e7eb; border-radius: 6px; padding: 0.75rem;">
+                                <summary style="cursor: pointer; font-weight: 500; color: #374151; font-size: 0.9rem;">How does repoIQ analyze my code?</summary>
+                                <p style="margin-top: 0.5rem; color: #6b7280; line-height: 1.5; font-size: 0.85rem;">repoIQ uses LLM and other advanced AI algorithms, compiler techniques to analyze code for performance, quality, and security issues. Our AI examines code patterns, identifies potential bottlenecks, and provides actionable recommendations without requiring code execution or profiling.</p>
+                            </details>
+                            
+                            <details style="border: 1px solid #e5e7eb; border-radius: 6px; padding: 0.75rem;">
+                                <summary style="cursor: pointer; font-weight: 500; color: #374151; font-size: 0.9rem;">Is my code secure and private?</summary>
+                                <p style="margin-top: 0.5rem; color: #6b7280; line-height: 1.5; font-size: 0.85rem;">Yes, your code is encrypted in transit and at rest. We follow industry-standard security practices including SOC 2 compliance. Your code is never shared with third parties and is processed in secure, isolated environments.</p>
+                            </details>
+                            
+                            <details style="border: 1px solid #e5e7eb; border-radius: 6px; padding: 0.75rem;">
+                                <summary style="cursor: pointer; font-weight: 500; color: #374151; font-size: 0.9rem;">What programming languages are supported?</summary>
+                                <p style="margin-top: 0.5rem; color: #6b7280; line-height: 1.5; font-size: 0.85rem;">Currently supported: C, C++, Java, Kotlin, Objective-C, and Objective-C++. We're actively adding support for Python, JavaScript, TypeScript, Go, and Rust.</p>
+                            </details>
+                            
+                            <details style="border: 1px solid #e5e7eb; border-radius: 6px; padding: 0.75rem;">
+                                <summary style="cursor: pointer; font-weight: 500; color: #374151; font-size: 0.9rem;">How do I integrate repoIQ with my repository?</summary>
+                                <p style="margin-top: 0.5rem; color: #6b7280; line-height: 1.5; font-size: 0.85rem;">Simply connect your GitHub repository with one click. repoIQ automatically analyzes your codebase and provides detailed reports. You can also integrate with CI/CD pipelines using our API or GitHub Actions.</p>
+                            </details>
+                            
+                            <details style="border: 1px solid #e5e7eb; border-radius: 6px; padding: 0.75rem;">
+                                <summary style="cursor: pointer; font-weight: 500; color: #374151; font-size: 0.9rem;">What types of issues does repoIQ detect?</summary>
+                                <p style="margin-top: 0.5rem; color: #6b7280; line-height: 1.5; font-size: 0.85rem;">Performance bottlenecks, logical bugs in code, inefficient algorithms, and some potential security vulnerabilities</p>
+                            </details>
+                            
+                            <details style="border: 1px solid #e5e7eb; border-radius: 6px; padding: 0.75rem;">
+                                <summary style="cursor: pointer; font-weight: 500; color: #374151; font-size: 0.9rem;">How accurate are the analysis results?</summary>
+                                <p style="margin-top: 0.5rem; color: #6b7280; line-height: 1.5; font-size: 0.85rem;">Our AI models are trained on millions of code patterns and achieve over 95% accuracy with minimal false positives. Results are prioritized by impact and confidence levels to help you focus on the most critical issues first.</p>
+                            </details>
+                            
+                            <details style="border: 1px solid #e5e7eb; border-radius: 6px; padding: 0.75rem;">
+                                <summary style="cursor: pointer; font-weight: 500; color: #374151; font-size: 0.9rem;">Can I use repoIQ for large codebases?</summary>
+                                <p style="margin-top: 0.5rem; color: #6b7280; line-height: 1.5; font-size: 0.85rem;">Yes, repoIQ scales to analyze codebases of any size, from small projects to enterprise applications with millions of lines of code. Analysis time scales efficiently with parallel processing capabilities.</p>
+                            </details>
+                            
+                            <details style="border: 1px solid #e5e7eb; border-radius: 6px; padding: 0.75rem;">
+                                <summary style="cursor: pointer; font-weight: 500; color: #374151; font-size: 0.9rem;">Do you offer on-premise deployment?</summary>
+                                <p style="margin-top: 0.5rem; color: #6b7280; line-height: 1.5; font-size: 0.85rem;">Yes, we offer both cloud and on-premise deployment options. Enterprise customers can deploy repoIQ within their own infrastructure for maximum security and compliance requirements.</p>
+                            </details>
+                            
+                            <details style="border: 1px solid #e5e7eb; border-radius: 6px; padding: 0.75rem;">
+                                <summary style="cursor: pointer; font-weight: 500; color: #374151; font-size: 0.9rem;">What support options are available?</summary>
+                                <p style="margin-top: 0.5rem; color: #6b7280; line-height: 1.5; font-size: 0.85rem;">We provide email support for all users, priority support for paid plans, and dedicated support engineers for enterprise customers. Documentation, tutorials, and community forums are also available.</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Options -->
+    <section style="padding: 25px 0; background-color: #f9fafb;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <h2 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: #1f2937;">Need More Help?</h2>
+                <p style="font-size: 1rem; color: #6b7280; margin: 0;">
+                    Additional support resources
+                </p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                <div class="card">
+                    <div class="card-body" style="text-align: center; padding: 1.25rem;">
+                        <div style="font-size: 2rem; margin-bottom: 0.75rem;">📚</div>
+                        <h3 style="margin-bottom: 0.5rem; font-size: 1.1rem;">Documentation</h3>
+                        <p style="color: #6b7280; margin-bottom: 1rem; font-size: 0.9rem;">Guides and API docs</p>
+                        <a href="#" class="btn btn-outline" style="padding: 8px 16px; font-size: 0.9rem;">View Docs</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-body" style="text-align: center; padding: 1.25rem;">
+                        <div style="font-size: 2rem; margin-bottom: 0.75rem;">👥</div>
+                        <h3 style="margin-bottom: 0.5rem; font-size: 1.1rem;">Community</h3>
+                        <p style="color: #6b7280; margin-bottom: 1rem; font-size: 0.9rem;">Connect with developers</p>
+                        <a href="#" class="btn btn-outline" style="padding: 8px 16px; font-size: 0.9rem;">Join Community</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-body" style="text-align: center; padding: 1.25rem;">
+                        <div style="font-size: 2rem; margin-bottom: 0.75rem;">🎥</div>
+                        <h3 style="margin-bottom: 0.5rem; font-size: 1.1rem;">Tutorials</h3>
+                        <p style="color: #6b7280; margin-bottom: 1rem; font-size: 0.9rem;">Step-by-step guides</p>
+                        <a href="#" class="btn btn-outline" style="padding: 8px 16px; font-size: 0.9rem;">Watch Videos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" style="padding: 20px 0; background-color: #f9fafb;">
+        <div class="container">
+            <div class="footer-bottom" style="padding: 0; border-top: 1px solid #e5e7eb; padding-top: 20px;">
+                <p class="footer-copyright">
+                    © 2025 repoIQ™. All rights reserved.
+                </p>
+                <div class="footer-links" style="display: flex; gap: 2rem; align-items: center;">
+                    <a href="about.html" style="color: #6b7280; text-decoration: none; font-size: 0.9rem;">About</a>
+                    <a href="#" style="color: #6b7280; text-decoration: none; font-size: 0.9rem;">Corporate Information</a>
+                    <a href="#" style="color: #6b7280; text-decoration: none; font-size: 0.9rem;">Privacy Policy</a>
+                    <a href="#" style="color: #6b7280; text-decoration: none; font-size: 0.9rem;">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+        // Contact form handling
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get form data
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const company = document.getElementById('company').value;
+                    const subject = document.getElementById('subject').value;
+                    const message = document.getElementById('message').value;
+                    
+                    // Validate required fields
+                    if (!name || !email || !subject || !message) {
+                        window.repoIQ.showAlert('Please fill in all required fields.', 'error');
+                        return;
+                    }
+                    
+                    // Generate email content
+                    generateContactEmail(name, email, company, subject, message);
+                });
+            }
+        });
+        
+        // Generate contact email with form data
+        function generateContactEmail(name, email, company, subject, message) {
+            const emailSubject = `RepoIQ Contact: ${subject}`;
+            
+            // Create email body with general description and user information
+            const emailBody = `Hello RepoIQ Team,
+
+You have received a new contact form submission from your website.
+
+CONTACT DETAILS:
+• Name: ${name}
+• Email: ${email}
+• Company: ${company || 'Not provided'}
+• Subject: ${subject}
+
+MESSAGE:
+${message}
+
+ABOUT REPOIQ:
+This inquiry is regarding repoIQ's AI-powered code quality analysis platform that helps development teams identify performance bottlenecks, detect security vulnerabilities, find code quality issues, and generate comprehensive reports with actionable insights.
+
+Please respond to this inquiry at your earliest convenience.
+
+Best regards,
+repoIQ Contact Form System`;
+            
+            // Create mailto link
+            const mailtoLink = `mailto:support@repoiq.net?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+            
+            // Open email client
+            window.location.href = mailtoLink;
+            
+            // Show success message and reset form
+            window.repoIQ.showAlert('Email client opened with your message!', 'success');
+            document.getElementById('contactForm').reset();
+        }
+    </script>
+</body>
+</html>
